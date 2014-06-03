@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block 	registro %}
+	<form action="" method="POST">{% csfr_token %}
+		{{ formulario.as_p }}
+		<input type="submit" value="GUARDAR">
+
+	</form>
+{% endblock registro %}
